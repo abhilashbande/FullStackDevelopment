@@ -1,0 +1,21 @@
+h1,
+h2 {
+    font-size: 25px; /* Size */
+    font-weight: 800; /* Bold */
+    color: blueviolet; /* font color */
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border: solid;
+    border-radius: 10px;
+    letter-spacing: 10px;
+}
+
+.border {
+    padding: 20px;
+    font-size: 20px;
+    border: groove;
+    border-width: 20px;
+    border-color: greenyellow;
+    color: brown;
+}
