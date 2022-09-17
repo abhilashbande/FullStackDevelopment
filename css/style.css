@@ -1,5 +1,6 @@
 h1,
-h2 {
+h3,
+h6{
     font-size: 25px; /* Size */
     font-weight: 800; /* Bold */
     color: blueviolet; /* font color */
@@ -11,6 +12,10 @@ h2 {
     letter-spacing: 10px;
 }
 
+body {
+	background: linear-gradient(90deg, #c7c5f4, #776bcc);
+}
+
 .border {
     padding: 20px;
     font-size: 20px;
@@ -18,4 +23,33 @@ h2 {
     border-width: 20px;
     border-color: greenyellow;
     color: brown;
+}
+
+#flexDis {
+	display: flex;
+}
+
+#block1 {
+	margin: 20px 20px;
+	width:400px;
+	height:300px;
+	border: 10px solid violet;	
+	display: flex;
+}
+
+#block2 {
+	padding: 15px;
+	margin: 100px 20px;
+	width: 250px;
+	height: 250px;
+	border: 5px dashed blue;
+	transform: rotate(45deg);
+	border-radius:40px;
+}
+
+#innerBlock {
+	width: 175px;
+	height: 175px;
+	background : #fff;
+	transform: rotate(45deg);
 }
