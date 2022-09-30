@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" async defer></script>
+    </head>
+    <body>
+        <input
+            type="button"
+            class="btn btn-outline-primary"
+            value="Load Image"
+            onClick="loadImage()"
+        />
+        <hr />
+
+        <input
+            type="button"
+            class="btn btn-outline-success"
+            value="Open Window"
+            onClick="openWindow()"
+        />
+
+        <input
+            type="button"
+            class="btn btn-outline-danger"
+            value="Close Window"
+            onClick="closeWindow()"
+        />
+        <hr />
+        <input
+            name="OpenCloseButton"
+            id="OpenCloseButton"
+            type="button"
+            class="btn btn-outline-success"
+            value="Open"
+            onClick="openCloseWindow()"
+        />
+        <hr />
+        <input
+            type="button"
+            class="btn btn-outline-warning"
+            value="Open"
+            onClick="floatingWindow()"
+        />
+        <hr />
+
+        <form name="MathFunctionForm">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">input</span>
+                <input
+                    type="number"
+                    name="inputNumber"
+                    id="inputNumber"
+                    onkeyup="calculateMathFunctions()"
+                />
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">sin</span>
+                <input type="text" name="sinValue" id="sinValue" disabled />
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">cos</span>
+                <input type="text" name="cosValue" id="cosValue" disabled />
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">tan</span>
+                <input type="text" name="tanValue" id="tanValue" disabled />
+            </div>
+        </form>
+
+        <hr />
+
+        <form name="calculator">
+            <input
+                type="number"
+                name="number1"
+                placeholder="Number 1"
+                onChange="valuesChanged()"
+            />
+            <input
+                type="number"
+                name="number2"
+                placeholder="Number 2"
+                onChange="valuesChanged()"
+            />
+            <input
+                type="button"
+                class="btn btn-outline-secondary"
+                value="Addition"
+                onClick="add()"
+            />
+
+            <input
+                type="button"
+                class="btn btn-outline-secondary"
+                value="Subtraction"
+                onClick="sub()"
+            />
+
+            <input
+                type="button"
+                class="btn btn-outline-secondary"
+                value="Multiply"
+                onClick="mul()"
+            />
+
+            <input
+                type="button"
+                class="btn btn-outline-secondary"
+                value="Division"
+                onClick="div()"
+            />
+
+            <br />
+            <label for="Result">Result</label>
+            <input
+                name="result"
+                id="result"
+                type="text"
+                disabled
+                placeholder="Result"
+            />
+        </form>
+    </body>
+</html>
