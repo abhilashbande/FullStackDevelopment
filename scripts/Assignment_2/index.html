@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 2</title>
+        <style>
+            p {
+                margin: 0;
+                font-size: 30px;
+            }
+        </style>
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <h3>Coundown</h3>
+        <p id="countdown"></p>
+        <input type="button" value="Start" onclick="countdown()" />
+        <hr />
+        <h3>Number of Occurances of a char</h3>
+        <input type="text" id="occurString" />
+        <input type="text" id="serachChar" />
+        <input type="text" id="noOfOccur" disabled />
+        <input
+            type="button"
+            value="Find Occurances"
+            onclick="occurancesOfChar()"
+        />
+        <hr />
+
+        <h3>Palindrome</h3>
+        <input type="text" id="inputString" />
+        <input type="text" id="palindromResult" disabled />
+        <input type="button" value="Check Palindrome" onclick="palindrome()" />
+        <hr />
+
+        <h3>Duplicate Characters</h3>
+        <input type="text" id="dupCharString" />
+        <input type="text" id="dupCharStringResult" disabled />
+        <input
+            type="button"
+            value="Check Duplicates"
+            onclick="duplicateChar()"
+        />
+        <hr />
+    </body>
+</html>
