@@ -14,6 +14,7 @@ function updateCountdown() {
     if (time < 0) {
         alert("Time up!!!");
         clearTimeout(timeout);
+		time = 60 * 0.1;
     }
 }
 
