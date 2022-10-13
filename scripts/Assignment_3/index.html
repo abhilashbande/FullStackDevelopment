@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" async defer></script>
+    </head>
+    <body>
+        <input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Enter age between 18-65"
+            onChange="validateAge(this.value)"
+        />
+        <hr />
+
+        <form onsubmit="return validateForm()">
+            <input
+                type="text"
+                name="emailId"
+                id="emailID"
+                placeholder="Enter Email Id"
+                onchange="validateEmailID(this.value)"
+            />
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
